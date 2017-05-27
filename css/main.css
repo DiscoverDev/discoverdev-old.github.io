@@ -26,6 +26,10 @@ body {
     visibility: hidden;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 /* ----------------------------------------------- */
 /* HEADER */
 /* ----------------------------------------------- */
@@ -40,8 +44,11 @@ header {
 
 .logo {
     float: left;
-    margin: 15px;
-    /*what about when the screen is too big? % wise padding will work?*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 2%;
+    /*what about when the screen is too big? 
+    % wise padding will work?*/
     height: 60px;
 }
 
@@ -97,10 +104,86 @@ header > nav > ul > li > a.highlight:hover {
 */
 div.wrapper {
     background: white;
-    padding: 2%;
-    max-width: 1140px;
+    padding: 0 2%;
+    max-width: 1240px;
     margin: 20px auto;
     font-size: 17px;
     color: black;
 }
 
+/**** MAIN *****/
+main {
+    height: 1000px;
+}
+
+main > .intro {
+    font-weight: bold;
+    font-size: 19px;
+    display: block;
+    padding: 15px 0;
+}
+
+.day-list {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+
+.day-list > time {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+}
+
+.day-list > ul {
+    list-style-type: none;
+    display: block;
+}
+
+.day-list > ul > li {
+    display: block;
+    padding-bottom: 15px;
+}
+
+.post-link > .title {
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
+
+.post-link > .title > a {
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 2px 0;
+    /*color: blue;*/
+}
+
+.post-link > .description {
+    font-size: 16px;
+    padding-top: 3px;
+}
+
+/**** ASIDE ****/
+aside.col {
+    border: 2px solid black;
+    padding: 12px;
+    /* XXX HACK : overriding default gutter of grid.css*/
+    margin-left: 2.6%;
+    width: 31.26%;
+}
+
+.signup {
+
+}
+.signup > h1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    border: 2px solid black;
+}
