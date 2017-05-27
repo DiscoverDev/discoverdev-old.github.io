@@ -1,0 +1,106 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    font-family: 'Inconsolata', monospace;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
+
+header {
+    background-color: white;
+    border-bottom: solid 1.5px black;
+    padding: 0px 10px;
+}
+
+/******** LOGO ********/
+
+.logo {
+    float: left;
+    margin: 15px;
+    /*what about when the screen is too big? % wise padding will work?*/
+    height: 60px;
+}
+
+.logo > img {
+    height: 60px;
+}
+
+/******** Nav bar ********/
+
+header > nav {
+    float: right;
+    margin-top: 25px;
+    padding: 10px;
+    font-size: 18px;
+}
+
+header > nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header > nav > ul > li {
+    display: inline;
+    padding: 8px;
+}
+
+header > nav > ul > li > a {
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: all ease-in-out 0.3s;
+}
+
+header > nav > ul > li > a:hover {
+    border-color: black;
+}
+
+header > nav > ul > li > a.highlight {
+    color: blue;
+    font-weight: bold;
+}
+
+header > nav > ul > li > a.highlight:hover {
+    border-color: blue;
+}
+
+/* ----------------------------------------------- */
+/* Wrapper */
+/* ----------------------------------------------- */
+/* The wrapper wraps the main element (which contains the week's articles)
+    and the aside element which has the signup button!
+*/
+div.wrapper {
+    background: white;
+    padding: 2%;
+    max-width: 1140px;
+    margin: 20px auto;
+    font-size: 17px;
+    color: black;
+}
+
