@@ -114,6 +114,7 @@ div.wrapper {
 /**** MAIN *****/
 main {
     height: 100%;
+    padding-right: 2%;
 }
 
 main > .intro {
@@ -177,6 +178,7 @@ main > .intro {
 .post-link > .description {
     font-size: 16px;
     padding: 3px 0;
+    color: #333;
 }
 
 .post-link > .tags {
@@ -187,15 +189,9 @@ main > .intro {
 /**** ASIDE ****/
 aside.col {
     border: 2px solid black;
-    padding: 12px;
-    /* XXX HACK : overriding default gutter of grid.css*/
-    margin-left: 2.6%;
-    width: 31.26%;
+    padding: 7px;
 }
 
-.signup {
-
-}
 .signup > h1 {
     margin-left: 10px;
     margin-right: 10px;
@@ -210,6 +206,7 @@ aside.col {
 
 .signup > form > input[type="text"] {
     border: 2px solid black;
+    padding-left: 5px;
     margin: 10px 0;
     height: 35px;
     width: 75%;
