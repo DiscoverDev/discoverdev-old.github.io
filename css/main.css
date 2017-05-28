@@ -203,9 +203,33 @@ aside.col {
     border: 2px solid black;
 }
 
-.signup .form {
-    
+.signup > form {
+    padding: 15px 0;
+    text-align: center;
 }
+
+.signup > form > input[type="text"] {
+    border: 2px solid black;
+    margin: 10px 0;
+    height: 35px;
+    width: 75%;
+}
+
+.signup > form > input[type="text"]::placeholder {
+    color: #aaa;
+    font-family: 'Inconsolata', monospace;
+}
+
+.signup > form > input[type="submit"] {
+    border: none;
+    background-color: black;
+    font-size: bold;
+    color: white;
+    margin: 10px 0;
+    height: 35px;
+    width: 50%;
+}
+
 
 /**************
 **** Footer ***
