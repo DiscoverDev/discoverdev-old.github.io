@@ -190,7 +190,7 @@ main > .intro {
 aside.col {
     border: 2px solid black;
     padding: 7px;
-    /*max-width: 325px;*/
+    max-width: 500px;
 }
 
 .signup > h1 {

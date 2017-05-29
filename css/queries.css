@@ -31,7 +31,7 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
 
     /* aside specific */
     .wrapper > aside {
-        width: 60%;
+        width: 75%;
         min-width: 400px;
         margin: 20px auto;
     }
@@ -84,5 +84,12 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
 @media only screen and (max-width: 600px) {
     .wrapper > main {
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper > aside {
+        width: 100%;
+        min-width: 0px;
     }
 }
