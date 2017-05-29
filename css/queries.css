@@ -1,0 +1,46 @@
+/*
+This is the quries css file - meant for media queires.
+
+The main.css file covers for the normal desktop experience which is fine for 
+1200px and above (max-width has been set too 1200px). Below that it looks fine 
+till 1060px, after which the signup box starts creeping. The breakpoints are as follows -
+
+> 1060px (no media queries)
+1060px (signup box adjusting)
+*/
+
+@media only screen and (max-width: 1060px) {
+    /* 
+    1. Fix the main body and aside sections. Move aside to bottom.
+    2. Probably change the into text - have a link that askes people to subscribe,
+         link should scroll them all the way down (?)
+    */
+
+    /* General fix - make both full width*/
+    .wrapper > aside,
+    .wrapper > main {
+        width: 100%;
+        margin: 0;
+        float: none;
+    }
+
+    /* main specific */
+    .wrapper > main {
+        padding: 0 6%;
+    }
+
+    /* aside specific */
+    .wrapper > aside {
+        width: 60%;
+        min-width: 400px;
+        margin: 20px auto;
+    }
+
+}
+
+/* 800 (padding(main) = 4%), and then 480px */
+@media only screen and (max-width: 800px) {
+    .wrapper > main {
+        padding: 0 3%;
+    }
+}
