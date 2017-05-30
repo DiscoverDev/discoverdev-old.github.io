@@ -198,6 +198,7 @@ aside.col {
     margin-right: 10px;
     text-align: center;
     border: 2px solid black;
+    box-shadow: 4px -4px black;
 }
 
 .signup > form {
