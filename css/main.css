@@ -34,7 +34,7 @@ body {
 /* HEADER */
 /* ----------------------------------------------- */
 
-header {
+body > header {
     background-color: white;
     border-bottom: solid 1.5px black;
     padding: 0px 10px;
@@ -253,9 +253,9 @@ footer {
 
     /*To make it stick to bottom incase of shortage on content
       but do I need this level of detail? */
-    /*position: absolute;
+    position: absolute;
     width: 100%;
-    bottom: 0px;*/
+    bottom: 0px;
 }
 
 footer > .msg {
