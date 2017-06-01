@@ -7,7 +7,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    position: relative;
+}
 html,
 body {
     background-color: #fff;
@@ -269,4 +275,13 @@ footer > .copyright {
     font-style: italic;
     color: #ccc;
     text-align: left;
+}
+
+/* so that the footer with absolute position won't eat off
+the actual content. Other way is to give body a padding
+https://stackoverflow.com/questions/18915550/fix-footer-to-bottom-of-page
+https://stackoverflow.com/questions/4575826/how-to-push-a-footer-to-the-bottom-of-page-when-content-is-short-or-missing
+*/
+.ghost-footer {
+    height: 100px;
 }
