@@ -130,6 +130,50 @@ main > .intro {
     padding: 15px 0;
 }
 
+section.subscribe {
+    display: none;
+    border: 2px solid black;
+    padding: 7px;
+    max-width: 750px;
+    margin: 10px auto;
+    /*text-align: center;*/
+}
+
+.subscribe > form > input[type="text"] {
+    border: 2px solid black;
+    padding-left: 5px;
+    margin: 10px 0;
+    height: 35px;
+    max-width: 300px;
+    min-width: 180px;
+    width: 30%;
+}
+
+.subscribe > form > input[type="text"]::placeholder {
+    color: #aaa;
+    font-family: 'Inconsolata', monospace;
+}
+
+.subscribe > form > input[type="submit"] {
+    border: none;
+    background-color: black;
+    font-size: bold;
+    color: white;
+    margin: 5px 0;
+    height: 35px;
+    width: 30%;
+    max-width: 300px;
+    min-width: 180px;
+}
+
+.subscribe > .privacy-msg {
+    color: #555;
+    font-style: italic;
+    font-size: 14px;
+    /*text-align: center;*/
+}
+
+
 .day-list {
     display: block;
     padding: 10px 0;
@@ -215,7 +259,8 @@ aside.col {
     color: #555;
     font-style: italic;
     padding: 5px;
-    font-size: 14px; 
+    font-size: 14px;
+    text-align: center;
 }
 
 .signup > form {
