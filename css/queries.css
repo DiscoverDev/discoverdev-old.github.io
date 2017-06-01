@@ -36,6 +36,10 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
         margin: 20px auto;
     }
 
+    section.subscribe {
+        display: block;
+    }
+
 }
 
 
@@ -81,15 +85,29 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .wrapper > main {
-        padding: 0;
+@media only screen and (max-width: 650px) {
+    .subscribe{
+        text-align: center;
+    }
+    .subscribe > form > input[type="text"],
+    .subscribe > form > input[type="submit"]{
+        width: 40%;
     }
 }
 
 @media only screen and (max-width: 600px) {
+    .wrapper > main {
+        padding: 0;
+    }
     .wrapper > aside {
         width: 100%;
         min-width: 0px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .subscribe > form > input[type="text"],
+    .subscribe > form > input[type="submit"]{
+        width: 80%;
     }
 }
