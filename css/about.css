@@ -2,10 +2,11 @@
 main > article {
     color: black;
     padding: 30px 2%;
-    max-width: 960px;
+    max-width: 820px;
     margin: 0 auto;
-    line-height: 1.2;
-    font-size: 17px;
+    line-height: 1.4;
+    font-size: 18px;
+    text-align: justify;
 }
 
 @media only screen and (max-width: 680px) {
@@ -16,8 +17,22 @@ main > article {
 
 @media only screen and (max-width: 400px) {
     main > article {
-        padding: 30px 0%;
+        line-height: 1.25;
+        font-size: 17px;
+        text-align: initial;
     }
+}
+
+section.content {
+    padding-bottom: 30px;
+}
+
+section.subscribe-about {
+
+    max-width: 600px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 20px auto;
 }
 
 .page-title {
