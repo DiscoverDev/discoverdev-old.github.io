@@ -9,7 +9,7 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
 1060px (signup box adjusting)
 */
 
-@media only screen and (max-width: 1060px) {
+@media only screen and (max-width: 1000px) {
     /* 
     1. Fix the main body and aside sections. Move aside to bottom.
     2. Probably change the into text - have a link that askes people to subscribe,
