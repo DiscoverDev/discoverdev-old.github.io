@@ -63,7 +63,7 @@ till 1060px, after which the signup box starts creeping. The breakpoints are as 
         margin-bottom: 15px;
         height: 50px;
     }
-    header > .logo > img {
+    header > .logo  img {
         display: block;
         margin: auto;
     }
