@@ -130,17 +130,56 @@ main > .intro {
     padding: 15px 0;
 }
 
-section.subscribe {
+.intro > .sub-highlight {
+    color: blue;
+    font-weight: bold;
+}
+section.subscribe-modal-bg {
     display: none;
-    border: 2px solid black;
-    padding: 7px;
-    max-width: 720px;
-    margin-bottom: 10px;
-    /*margin: 10px auto;
-    text-align: center;*/
+    overflow: auto;
+    z-index: 9999;
 }
 
-.subscribe > form > input[type="text"] {
+section.subscribe-modal-bg:target {
+    position: fixed;
+    background-color: rgba(25,25,25,.5);
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.subscribe-modal {
+    position: relative;
+    border: 2px solid black;
+    padding: 15px;
+    max-width: 720px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+div.subscribe-modal > .close {
+    display: block;
+    padding: 7px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div.subscribe-modal > form {
+    text-align: center;
+    padding: 5px 0;
+}
+
+div.subscribe-modal > form > input[type="text"] {
     border: 2px solid black;
     padding-left: 5px;
     margin: 10px 0;
@@ -150,12 +189,12 @@ section.subscribe {
     width: 30%;
 }
 
-.subscribe > form > input[type="text"]::placeholder {
+div.subscribe-modal > form > input[type="text"]::placeholder {
     color: #aaa;
     font-family: 'Inconsolata', monospace;
 }
 
-.subscribe > form > input[type="submit"] {
+div.subscribe-modal > form > input[type="submit"] {
     border: none;
     background-color: black;
     font-size: bold;
@@ -167,7 +206,7 @@ section.subscribe {
     min-width: 180px;
 }
 
-.subscribe > .privacy-msg {
+div.subscribe-modal > .privacy-msg {
     color: #555;
     font-style: italic;
     font-size: 14px;
